@@ -180,11 +180,3 @@
 
 **Overall Assessment:**
 This was a successful team project. Both members contributed meaningfully and we learned a lot about REST APIs, authentication, and data structures. The collaboration was smooth and we're proud of what we built together!
-
----
-
-**Signatures:**
-
-**Darlene Ayinkamiye** - _________________ - Date: January 24, 2026
-
-**Chely Kelvin Sheja** - _________________ - Date: January 24, 2026
