@@ -12,7 +12,6 @@
 |------|-------|------|
 | Darlene Ayinkamiye | d.ayinkamiye@alustudent.com | Team Leader & Backend Development |
 | Chely Kelvin Sheja | c.sheja@alustudent.com | Data Parsing & API Endpoints |
-| Solomon Leek | s.leek@alustudent.com | Security & Testing |
 
 ---
 
@@ -66,29 +65,6 @@
 - Efficient data structure design enabling fast lookups
 
 ---
-
-### Solomon Leek
-**Primary Responsibilities:**
-- Authentication implementation (Basic Auth)
-- Security documentation and analysis
-- API testing scripts
-- Error handling and validation
-
-**Time Invested:** ~11 hours
-
-**Key Contributions:**
-- Created `api/auth.py` with Basic Authentication implementation
-- Implemented authorization header parsing and credential validation
-- Added 401 Unauthorized responses for invalid credentials
-- Wrote security reflection explaining Basic Auth limitations and alternatives (JWT, OAuth2)
-- Created test scripts (`tests/test_api.sh` and `tests/test_api.ps1`)
-- Tested all endpoints with curl commands
-- Captured screenshots for documentation
-
-**Evidence:**
-- Git commits for `api/auth.py` and test scripts
-- Comprehensive security analysis in documentation
-- Complete test suite covering all CRUD operations and auth scenarios
 
 ---
 
