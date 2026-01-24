@@ -1,7 +1,7 @@
 # Team Participation Sheet - MoMo API Project
 
 **Course:** Building and Securing a REST API
-**Team Name:** ALU MoMo API Team
+**Team Name:** ALU MoMo API Team  
 **Submission Date:** January 24, 2026
 
 ---
@@ -11,7 +11,7 @@
 | Name | Email | Role |
 |------|-------|------|
 | Darlene Ayinkamiye | d.ayinkamiye@alustudent.com | Team Leader & Backend Development |
-| Chely Kelvin Sheja | c.sheja@alustudent.com | Data Parsing & API Endpoints |
+| Chely Kelvin Sheja | c.sheja@alustudent.com | Data Parsing & API Development |
 
 ---
 
@@ -20,23 +20,24 @@
 ### Darlene Ayinkamiye
 **Primary Responsibilities:**
 - REST API server architecture and routing
-- PUT and DELETE endpoint implementation
+- CRUD endpoints implementation (PUT, DELETE)
+- Basic Authentication implementation
 - DSA performance comparison (linear search vs dictionary lookup)
 - Project leadership and coordination
 
-**Time Invested:** ~15 hours
+**Time Invested:** ~18 hours
 
 **Key Contributions:**
 - Built the core routing logic in `api/server.py` - handling path parsing and request delegation
-- Implemented PUT endpoint for updating transactions with proper validation
-- Implemented DELETE endpoint with appropriate response codes
-- Created `dsa/search_comparison.py` - compared search algorithms with 10,000 iterations
+- Implemented all CRUD endpoints with proper validation
+- Created `api/auth.py` with Basic Authentication
+- Implemented `dsa/search_comparison.py` - compared search algorithms with 10,000 iterations
 - Found dictionary lookup is significantly faster than linear search
 - Led team meetings and code integration
 - Final testing and quality assurance before submission
 
 **Evidence:**
-- Git commits for `api/server.py` and `dsa/search_comparison.py`
+- Git commits for `api/server.py`, `api/auth.py`, and `dsa/search_comparison.py`
 - Implemented complex routing logic handling all HTTP methods
 - DSA comparison script with detailed timing measurements
 
@@ -47,9 +48,10 @@
 - XML data parsing implementation
 - GET endpoints (list all & single record)
 - Data structure design
+- API testing and documentation
 - JSON conversion logic
 
-**Time Invested:** ~12 hours
+**Time Invested:** ~16 hours
 
 **Key Contributions:**
 - Created `dsa/parser.py` using ElementTree for XML parsing
@@ -57,14 +59,15 @@
 - Implemented GET /transactions endpoint (list all records)
 - Implemented GET /transactions/{id} endpoint (single record lookup)
 - Added data validation and error handling for malformed XML
-- Created sample transaction data for testing
+- Created comprehensive test scripts for all endpoints
+- Wrote API documentation with examples
+- Captured test screenshots for submission
 
 **Evidence:**
-- Git commits for `dsa/parser.py` and GET endpoints in `api/server.py`
+- Git commits for `dsa/parser.py`, GET endpoints, tests, and documentation
 - Comprehensive data parsing with proper error handling
 - Efficient data structure design enabling fast lookups
-
----
+- Complete test suite and documentation
 
 ---
 
@@ -72,7 +75,7 @@
 
 ### Meeting 1 - January 19, 2026
 **Duration:** 2 hours
-**Attendees:** All members
+**Attendees:** Darlene, Chely
 **Topics:**
 - Project requirements review
 - Task distribution and role assignment
@@ -81,13 +84,12 @@
 
 **Decisions:**
 - Use plain Python without frameworks
-- Darlene: Server routing and DSA
-- Chely: Data parsing and GET endpoints
-- Solomon: Authentication and testing
-- Weekly sync-ups on progress
+- Darlene: Server routing, CRUD operations, Authentication, DSA
+- Chely: Data parsing, GET endpoints, Testing, Documentation
+- Daily check-ins on progress
 
 **Notes:**
-- Everyone agreed on using Basic Auth for simplicity
+- Agreed on using Basic Auth for simplicity
 - Will document security concerns as required
 - Target completion: January 23rd for testing buffer
 
@@ -95,7 +97,7 @@
 
 ### Meeting 2 - January 21, 2026
 **Duration:** 1.5 hours
-**Attendees:** All members
+**Attendees:** Darlene, Chely
 **Topics:**
 - Progress check on individual components
 - Integration planning
@@ -108,15 +110,14 @@
 
 **Notes:**
 - Chely finished parsing, working on GET endpoints
-- Darlene has routing done, starting CRUD operations
-- Solomon implementing Basic Auth, found good examples
-- Minor merge conflicts resolved
+- Darlene has routing done, starting CRUD and authentication
+- Minor merge conflicts resolved quickly
 
 ---
 
 ### Meeting 3 - January 23, 2026
 **Duration:** 2 hours
-**Attendees:** All members
+**Attendees:** Darlene, Chely
 **Topics:**
 - Final integration and testing
 - Documentation review
@@ -141,18 +142,17 @@
 
 | Team Member | Files/Modules | Lines of Code | Commit Count |
 |-------------|---------------|---------------|--------------|
-| Darlene Ayinkamiye | api/server.py, dsa/search_comparison.py | ~250 | 15 |
-| Chely Kelvin Sheja | dsa/parser.py, GET endpoints | ~180 | 12 |
-| Solomon Leek | api/auth.py, test scripts, docs | ~150 | 10 |
+| Darlene Ayinkamiye | api/server.py, api/auth.py, dsa/search_comparison.py | ~400 | 4 |
+| Chely Kelvin Sheja | dsa/parser.py, tests/, docs/, GET endpoints | ~350 | 3 |
 
-**Total:** ~580 lines of functional code (excluding comments/docs)
+**Total:** ~750 lines of functional code (excluding comments/docs)
 
 ---
 
 ## Challenges & Solutions
 
 **Challenge 1:** Understanding Basic Auth header encoding
-- **Solution:** Solomon researched base64 encoding and implemented proper parsing
+- **Solution:** Darlene researched base64 encoding and implemented proper header parsing
 
 **Challenge 2:** Handling JSON request bodies in http.server
 - **Solution:** Darlene figured out proper content-length reading and JSON parsing
@@ -161,14 +161,14 @@
 - **Solution:** Chely created flexible parser handling all transaction types
 
 **Challenge 4:** Testing without a framework
-- **Solution:** Solomon created bash and PowerShell scripts using curl for testing
+- **Solution:** Chely created bash and PowerShell scripts using curl for comprehensive testing
 
 ---
 
 ## Team Dynamics
 
 **Strengths:**
-- Clear communication and regular check-ins
+- Clear communication and daily check-ins
 - Everyone completed their assigned tasks on time
 - Helped each other debug issues
 - Good distribution of workload
@@ -179,22 +179,12 @@
 - Better Git branch management
 
 **Overall Assessment:**
-This was a successful team project. Everyone contributed meaningfully and we learned a lot about REST APIs, authentication, and data structures. The collaboration was smooth and we're proud of what we built together!
+This was a successful team project. Both members contributed meaningfully and we learned a lot about REST APIs, authentication, and data structures. The collaboration was smooth and we're proud of what we built together!
 
 ---
-
-## Declaration
-
-We, the undersigned, confirm that:
-1. All team members contributed to this project
-2. The work submitted is our own
-3. All contributions are accurately represented above
-4. We understand that individual contributions will be verified through Git history
 
 **Signatures:**
 
 **Darlene Ayinkamiye** - _________________ - Date: January 24, 2026
 
 **Chely Kelvin Sheja** - _________________ - Date: January 24, 2026
-
-**Solomon Leek** - _________________ - Date: January 24, 2026
